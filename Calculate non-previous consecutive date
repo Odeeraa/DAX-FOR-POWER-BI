@@ -1,0 +1,8 @@
+Prev Day = 
+MAXX( 
+    FILTER(
+        ALL(Trade[TradeDate]),
+        Trade[TradeDate] < SELECTEDVALUE('Date'[Date])
+        ),
+        Trade[TradeDate]
+    )
